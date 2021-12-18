@@ -1,0 +1,88 @@
+<div class="modal-wrapper" id="modal-01">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <p class="center margin-b20">
+        お酒に関する情報が含まれますので、<br>
+        20歳未満の方はご覧いただけません。
+      </p>
+      <h2 class="heading-title">あなたは20歳以上ですか？</h2>
+<div class=" center">
+<a class="button modal" href="">はい</a>
+<a class="button modal" href="">いいえ</a>
+</div>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<style>
+.modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px 10px;
+  text-align: center
+}
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: ""
+}
+
+.modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px 30px 30px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  vertical-align: middle
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: left
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8)
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  color: #95979c !important;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38 !important
+}
+.button.modal {
+    margin: 20px;       
+}
+</style>
